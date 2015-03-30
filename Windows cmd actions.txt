@@ -1,0 +1,3 @@
+dir : lists all the directories in the current folder
+
+cd : change the current directory
