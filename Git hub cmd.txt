@@ -1,5 +1,26 @@
-Git status : donne la situation du dossier, si il y a bcp de choses en retard ou quoi
+git status : donne la situation du dossier, si il y a bcp de choses en retard ou quoi
 
-Git pull : "tire" depuis le serveur git toutes les modifications, les "commit" faits par d'autres sur l'ordinateur pour pouvoir les visualiser sur l'interface git hub. Grosso modo, ça syncronise la version du fichier présent sur l'ordinateur avec celle du serv.
+git pull : "tire" depuis le serveur git toutes les modifications, les "commit" faits par d'autres sur l'ordinateur pour pouvoir les visualiser sur l'interface git hub. Grosso modo, ça syncronise la version du fichier présent sur l'ordinateur avec celle du serv.
 
-Git add <nom> : préviens Git hub qu'il doit suivre les modifications faites à ce fichier, ça "upload" un fichier sur le serv et permets aux autres utilisateurs de le voir et de le modifier à condition qu'ils le "pull" à leur tour.
+git add <nom> : préviens Git hub qu'il doit suivre les modifications faites à ce fichier, ça "upload" un fichier sur le serv et permets aux autres utilisateurs de le voir et de le modifier à condition qu'ils le "pull" à leur tour.
+
+git push : "pousse" les commits fait sur le serveur, 'add' sert à ajouter un fichier pour la première fois, 'push' s'utilise pour les modifications
+
+git remote add 'folderName' 'https://...' : creates a repository at the specified url to enable us to push our commits
+
+git push -u origin master: (attention complex) cette commande va ajouter les dernier commit en date dans le répositoire 'origin' (donc a nommer selon nos propres fichiers, par ex 'Stuff') dans la branche 'master' (c'est pas mal de garder la branche principale nommée master pour éviter les confusions)
+
+git add '*.txt' : ajoutera tout les fichiers présent dans le répértoire au trackeur et sur le serveur
+
+git commit -m 'blabla' : défini "blabla" comme titre du commit qui vient d'être fait
+
+git log : historique de tout les commit fait précédement
+
+git diff : regarde les différences fait a des fichiers qui sont en places, cad prêt a être commit (qui ont été add)
+
+git reset 'nom.txt' : enlève le suivi du fichier, mais il existera toujours (unstages it)
+
+dir : comme dans la command line, donne la liste de tout les répértoires présents
+
+cd : permet de changer de répertoire
+__'cd ..' permet de remonter d'un répertoire
