@@ -1,0 +1,5 @@
+Git status : donne la situation du dossier, si il y a bcp de choses en retard ou quoi
+
+Git pull : "tire" depuis le serveur git toutes les modifications, les "commit" faits par d'autres sur l'ordinateur pour pouvoir les visualiser sur l'interface git hub. Grosso modo, ça syncronise la version du fichier présent sur l'ordinateur avec celle du serv.
+
+Git add <nom> : préviens Git hub qu'il doit suivre les modifications faites à ce fichier, ça "upload" un fichier sur le serv et permets aux autres utilisateurs de le voir et de le modifier à condition qu'ils le "pull" à leur tour.
