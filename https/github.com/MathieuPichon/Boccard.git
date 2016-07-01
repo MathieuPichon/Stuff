@@ -1,0 +1,62 @@
+main () {
+  i = 1
+  s = 0
+  
+  /* Ici il faut récupérer les infos de la 1ere ligne puisqu'elle sera supprimé par la suite
+  * or on ne sait pas à ce moment ci, à quoi elle correspond, il faut garder sa coordonnée d'entré
+  */
+  while(tableau non vide) {
+    ...
+    int coordSuiv1 = Cells(1, P2POS)
+    int coordSuiv2 = Cells(1, P3POS)
+
+    Depth_F_search(Recherche_piece(coordSuiv1),s)
+    Depth_F_search(Recherche_piece(coordSuiv2),s)
+  
+  }
+}
+
+
+
+Fonction Depth_F_search(indice i, compteur s) {
+  
+  
+  Matpiece
+  
+  int coordSortie1 = Cells(i,P2POS).Value
+  int diaSortie1 = Cells(i,P2BOR).Value
+  int epaisseur1
+  
+  if(Cells(i,P3POS).Value =/= NULL) {
+    int coordSortie2 = Cells(i,P3POS).Value
+    int diaSortie2 = Cells(i, P3BOR).Value
+  }
+  
+  supprimer(ligne i)
+  
+  int next = -1
+  next = Recherche_piece(P2POS)
+  
+  if(next =/= -1) {
+    s++
+    ecrire_Soudure(Matpiece,coordSortie1,diaSortie1, epaisseur1, ...)
+    Depth_F_search(next, s)
+  }
+  
+  if(P3POS =/= NULL) {
+    next = -1
+    next = Recherche_piece(P3POS)
+    if(next=/= -1) {
+      s++
+      Depth_F_search(next, s)
+    }
+  }
+  
+}
+Fonction Recherche_piece(Coordonnée Entree) {
+...
+}
+
+Fonction ecrire_Soudure (...) {
+...
+}
